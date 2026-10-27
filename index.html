@@ -40,6 +40,7 @@ body{
   color:var(--cream);
   overflow-x:hidden;
   -webkit-font-smoothing:antialiased;
+  -webkit-text-size-adjust:100%;
 }
 
 /* ═══════════════════════════════════════════
@@ -112,7 +113,7 @@ body{
 /* ═══════════════════════════════════════════
    BANNER 1: TOPMOST PHOTO ONLY BANNER
    Pure photo with flower petals dropping
-   NO names, NO "Sacred Union"
+   NO names
 ══════════════════════════════════════════= */
 #heroPhoto{
   position:relative;
@@ -155,7 +156,6 @@ body{
 /* ═══════════════════════════════════════════
    BANNER 2: NAME BANNER (SECOND SECTION)
    Couples names, auspicious invocation, dates
-   WITHOUT "Sacred union"
 ══════════════════════════════════════════= */
 #nameBanner{
   position:relative;
@@ -190,10 +190,28 @@ body{
   0%,100%{text-shadow:0 0 25px rgba(201,168,76,.4)}
   50%{text-shadow:0 0 70px rgba(201,168,76,.85),0 0 100px rgba(236,201,117,.4)}
 }
-.nb-invitation-kannada{
+.nb-beereshwara, .ft-beereshwara{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(0.95rem, 2.5vw, 1.25rem);
+  color:var(--gold-light);
+  letter-spacing:clamp(0.06em, 1.2vw, 0.14em);
+  font-weight:600;
+  line-height:1.4;
+  margin-top:0.3rem;
+  margin-bottom:0.55rem;
+  text-shadow:0 0 20px rgba(201,168,76,.5);
+  display:block;
+}
+.nb-beereshwara-kn, .ft-beereshwara-kn{
   font-family:'Noto Serif Kannada',serif;
-  font-size:1.05rem;color:var(--gold-light);
-  letter-spacing:.05em;opacity:.95;
+  font-size:clamp(0.95rem, 2.2vw, 1.15rem);
+  color:var(--gold);
+  letter-spacing:0.04em;
+  opacity:0.95;
+  line-height:1.65;
+  margin-top:0;
+  margin-bottom:1.5rem;
+  display:block;
 }
 .nb-lead{
   font-size:.85rem;letter-spacing:.5em;text-transform:uppercase;
@@ -679,7 +697,7 @@ body{
   background:linear-gradient(90deg,transparent,var(--gold-light),var(--gold),var(--gold-light),transparent);
 }
 .ft-om{
-  font-size:3.6rem;color:var(--gold);display:inline-block;margin-bottom:.8rem;
+  font-size:3.6rem;color:var(--gold);display:inline-block;margin-bottom:1.3rem;
   animation:glowOm 3s ease-in-out infinite;
 }
 .ft-quote{
@@ -749,7 +767,7 @@ body{
 <!-- ═══════════════════════════════════════════
      BANNER 1: TOPMOST PHOTO ONLY BANNER
      Pure photo with flower petals dropping
-     NO names, NO "Sacred Union"
+     NO names
 ══════════════════════════════════════════= -->
 <section id="heroPhoto">
   <img class="hero-full-img" src="18089bef-c770-4d95-beb5-91a60ff4e4e9.JPG" alt="Chandana &amp; Keerthi on Lotus Lake" fetchpriority="high"/>
@@ -765,7 +783,6 @@ body{
 <!-- ═══════════════════════════════════════════
      BANNER 2: NAME BANNER (SECOND SECTION)
      Couples names, auspicious invocation, dates
-     WITHOUT "Sacred union"
 ══════════════════════════════════════════= -->
 <section id="nameBanner">
   <div class="nb-glow"></div>
@@ -773,6 +790,8 @@ body{
 
   <div class="nb-container">
     <div class="nb-om">ॐ</div>
+    <p class="nb-beereshwara">|| Sri Beereshwara Swamy Prasanna ||</p>
+    <p class="nb-beereshwara-kn">|| ಶ್ರೀ ಬೀರೇಶ್ವರ ಸ್ವಾಮಿ ಪ್ರಸನ್ನ ||</p>
     <p class="nb-lead">We cordially invite you to celebrate the wedding of</p>
 
     <h1 class="nb-names">
@@ -787,14 +806,14 @@ body{
     <div class="nb-date-badges">
       <div class="nb-date-pill">
         <div class="nb-dp-day">05</div>
-        <div class="nb-dp-mon">December 2025</div>
-        <div class="nb-dp-ev">🌆 Reception Evening</div>
+        <div class="nb-dp-mon">December 2026</div>
+        <div class="nb-dp-ev">🌆 Saturday · Reception Evening</div>
       </div>
       <div class="nb-date-sep">✦</div>
       <div class="nb-date-pill">
         <div class="nb-dp-day">06</div>
-        <div class="nb-dp-mon">December 2025</div>
-        <div class="nb-dp-ev">🌅 Wedding Morning</div>
+        <div class="nb-dp-mon">December 2026</div>
+        <div class="nb-dp-ev">🌅 Sunday · Wedding Morning</div>
       </div>
     </div>
   </div>
@@ -817,7 +836,7 @@ body{
     <div class="ev-card" id="cardReception">
       <span class="ev-icon">🪔</span>
       <h3 class="ev-name">Reception</h3>
-      <div class="ev-date">Friday, 5th December 2025</div>
+      <div class="ev-date">Saturday, 5th December 2026</div>
       <div class="ev-time">Evening Celebration · 6:30 PM Onwards</div>
       <p class="ev-desc">
         Join us for an enchanting evening filled with music, laughter, dinner, and togetherness as we joyfully welcome the newly wedded couple.
@@ -829,12 +848,12 @@ body{
     <div class="ev-card" id="cardWedding">
       <span class="ev-icon">🌸</span>
       <h3 class="ev-name">Wedding Ceremony</h3>
-      <div class="ev-date">Saturday, 6th December 2025</div>
-      <div class="ev-time">Auspicious Morning Muhurtha</div>
+      <div class="ev-date">Sunday, 6th December 2026</div>
+      <div class="ev-time">Muhurtham: 8:15 AM to 9:15 AM</div>
       <p class="ev-desc">
-        A sacred South Indian Hindu marriage ceremony solemnized with traditional Vedic chants, Mangalya Dharana, and divine blessings of Lord Manjunatha.
+        A traditional South Indian Hindu marriage ceremony solemnized with Vedic chants, Mangalya Dharana, and divine blessings of God.
       </p>
-      <p class="ev-kn">ಶುಭ ವಿವಾಹ ಮಹೋತ್ಸವ — ಬ್ರಾಹ್ಮಿ ಮುಹೂರ್ತದಲ್ಲಿ ಸಪ್ತಪದಿ</p>
+      <p class="ev-kn">ದೇವರ ದಿವ್ಯ ಆಶೀರ್ವಾದದೊಂದಿಗೆ ಶುಭ ಮುಹೂರ್ತ: ಬೆಳಿಗ್ಗೆ 8:15 ರಿಂದ 9:15 ರವರೆಗೆ</p>
     </div>
   </div>
 </section>
@@ -982,6 +1001,9 @@ body{
     <div class="gal-item" onclick="openLightbox(10)"><img src="28907226-5207-4370-8820-31fff98e316a.JPG" alt="Bike in Field" loading="lazy"/><span class="gal-expand">⊕</span></div>
     <div class="gal-item" onclick="openLightbox(11)"><img src="5570e490-1925-40d6-a759-50a6704e6cca.JPG" alt="Car Window Framing" loading="lazy"/><span class="gal-expand">⊕</span></div>
     <div class="gal-item" onclick="openLightbox(12)"><img src="1dd41aeb-0189-4396-855d-1b84531e51b6.JPG" alt="Vintage Ambassador Front" loading="lazy"/><span class="gal-expand">⊕</span></div>
+    <div class="gal-item" onclick="openLightbox(13)"><img src="79c6fd19-4468-4723-97ee-4c8324d3b5bf.JPG" alt="Pre-wedding celebration" loading="lazy"/><span class="gal-expand">⊕</span></div>
+    <div class="gal-item" onclick="openLightbox(14)"><img src="86366a25-be51-4a50-8537-c34d7a814d43.JPG" alt="Romantic portrait" loading="lazy"/><span class="gal-expand">⊕</span></div>
+    <div class="gal-item" onclick="openLightbox(15)"><img src="4952745c-c667-435d-914b-239786f61c8f.JPG" alt="Cherished memories" loading="lazy"/><span class="gal-expand">⊕</span></div>
   </div>
 </section>
 
@@ -1006,24 +1028,24 @@ body{
 
   <div class="venue-container">
     <div class="venue-card-details">
-      <div class="v-temple-badge">🛕 Sacred Kalyan Mantap</div>
+      <div class="v-temple-badge">🛕 Kalyana Mantapa</div>
       <h3 class="v-title">Sri Manjunatha Swamy<br/>Kalyana Mantapa</h3>
       <p class="v-kannada">ಶ್ರೀ ಮಂಜುನಾಥ ಸ್ವಾಮಿ ಕಲ್ಯಾಣ ಮಂಟಪ</p>
       <p class="v-address">
         Bangalore, Karnataka<br/>
-        <em>Under the divine blessings of Lord Manjunatha</em>
+        <em>With the divine blessings of God and family</em>
       </p>
 
       <div class="v-schedule-tiles">
         <div class="v-tile">
           <div class="vt-label">Reception</div>
-          <div class="vt-name">Friday, 5 Dec 2025</div>
+          <div class="vt-name">Saturday, 5 Dec 2026</div>
           <div class="vt-time">Evening · 6:30 PM Onwards</div>
         </div>
         <div class="v-tile">
-          <div class="vt-label">Muhurtha</div>
-          <div class="vt-name">Saturday, 6 Dec 2025</div>
-          <div class="vt-time">Auspicious Morning</div>
+          <div class="vt-label">Muhurtham</div>
+          <div class="vt-name">Sunday, 6 Dec 2026</div>
+          <div class="vt-time">Morning · 8:15 AM to 9:15 AM</div>
         </div>
       </div>
 
@@ -1059,20 +1081,22 @@ body{
 ══════════════════════════════════════════= -->
 <footer id="footerSec">
   <div class="ft-om">ॐ</div>
-  <p class="ft-quote">"May your union be blessed by the divine —<br/>seven sacred vows, one eternal journey"</p>
+  <p class="ft-beereshwara">|| Sri Beereshwara Swamy Prasanna ||</p>
+  <p class="ft-beereshwara-kn">|| ಶ್ರೀ ಬೀರೇಶ್ವರ ಸ್ವಾಮಿ ಪ್ರಸನ್ನ ||</p>
+  <p class="ft-quote">"May your union be blessed by the divine —<br/>seven vows, one eternal journey"</p>
   <p class="ft-quote-kn">ದೇವರ ಆಶೀರ್ವಾದ ಸದಾ ನಿಮ್ಮ ಮೇಲಿರಲಿ</p>
   <div class="ft-divider"></div>
 
   <div class="ft-diya">🪔</div>
   <div class="ft-couple-names">Chandana KM &amp; Keerthi CV</div>
-  <p class="ft-subtext">December 5–6, 2025 · Bangalore, Karnataka</p>
+  <p class="ft-subtext">December 5–6, 2026 · Bangalore, Karnataka</p>
 
   <div class="ft-divider"></div>
 
   <div class="ft-family-note">
-    <p><span>With the blessings of our beloved parents &amp; family</span></p>
+    <p><span>With the blessings of God and our beloved parents &amp; family</span></p>
     <p>Sri Manjunatha Swamy Kalyana Mantapa, Bangalore</p>
-    <p>Reception: Evening of 5th December &nbsp;|&nbsp; Marriage: Morning of 6th December</p>
+    <p>Reception: Saturday Evening, 5th December &nbsp;|&nbsp; Marriage: Sunday Morning, 6th December (Muhurtham: 8:15 AM – 9:15 AM)</p>
   </div>
 
   <p class="ft-copyright">Made with love for Chandana &amp; Keerthi's Wedding</p>
@@ -1322,7 +1346,10 @@ const ALL_PHOTOS = [
   'af59afb3-c7e9-4064-b71c-4a38c8f02652.JPG',
   '28907226-5207-4370-8820-31fff98e316a.JPG',
   '5570e490-1925-40d6-a759-50a6704e6cca.JPG',
-  '1dd41aeb-0189-4396-855d-1b84531e51b6.JPG'
+  '1dd41aeb-0189-4396-855d-1b84531e51b6.JPG',
+  '79c6fd19-4468-4723-97ee-4c8324d3b5bf.JPG',
+  '86366a25-be51-4a50-8537-c34d7a814d43.JPG',
+  '4952745c-c667-435d-914b-239786f61c8f.JPG'
 ];
 let currentLbIndex = 0;
 const lbEl = document.getElementById('lightbox');
